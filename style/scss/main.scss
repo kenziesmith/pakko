@@ -1,0 +1,362 @@
+// import
+@import "_null"; // обнуление
+@import "_variables"; // переменные
+
+// Базовые параметры
+html {
+	font-size: 10px;
+    scroll-behavior: smooth;
+}
+body {
+	color: $accentColorDark;
+	font-size: 16px;
+}
+
+// Контейнер
+.container {  // ширина контента
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.title { // заголовки на сайте
+	font-size: 48px;
+	color: $accentColorDark;
+	font-weight: bold;
+	line-height: 56px;
+}
+
+// HEADER
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1235px;
+	margin: 0 auto;
+	padding: 33px 15px;
+}
+
+// NAV
+.nav {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding-left: 0;
+	&__item {
+		margin-left: 35px;
+	}
+	&__item:first-child {
+		margin: 0;
+	}
+	&__link {
+		color: $accentColorDark;
+		transition: .2s;
+		&:hover {
+			color: $accentColorLight;
+		}
+		&-color {
+		color: $accentColorLight;
+		&:hover {
+			text-shadow:#000 0px .1px 0px;
+		}
+	}
+	}
+	&__btn {
+		border-radius: .6rem;
+		font-size: 1.4rem;
+		color: #fff;
+		padding: 1.2rem 2.4rem;
+		background-color: $accentColorLight;
+		transition: .2s;
+		&:hover {
+			background-color: #322873;
+		}
+	}
+}
+
+// SECTION BANNER
+.banner {
+	text-align: center;
+	background-color: $accentColorDark;
+	color: #FFFFFF;
+	position: relative;
+	padding-bottom: 757px;
+	h1 {
+		margin: 0;
+		padding-top: 62px;
+		font-size: 55px;
+		font-family: 'Inter', sans-serif;
+		font-weight: normal;
+		letter-spacing: 0.56px;
+	}
+	p {
+		font-family: 'Inter', sans-serif;
+		font-weight: normal;
+		color: rgba(255, 255, 255, 0.7);
+		padding-top: 26px;
+		letter-spacing: 0.18px;
+	}
+	&__img {
+		position: absolute;
+		bottom: -172px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		pointer-events: none;
+
+	}
+}
+
+// кнопки
+.btn-group {
+	margin-top: 70px;
+	&__btn {
+		padding: 15px 36px;
+		background-color: $accentColorLight;
+		font-size: 15px;
+		color: #fff;
+		border-radius: 6px;
+		transition: .2s;
+		&:hover {
+			background-color: #322873;
+		}
+	}
+	&__border {
+		background-color: transparent;
+		margin-left: 16px;
+		border: 1px solid #C3C1CB;
+		border-radius: 8px;
+		&:hover {
+			background-color: $accentColorLight;
+		}
+	}
+}
+
+// SECTION PRICES
+.prices_title {
+	text-align: center;
+	padding-top: 190px;
+}
+.tarif {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 60px;
+	&-item {
+		width: 395px;
+	}
+	&-top {
+		padding-top: 100px;
+		border-radius: 8px 8px 0 0;
+	}
+	&-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		padding: 50px 26px 30px 26px;
+		background-color: $accentColorDark;
+		color: #fff;
+		&__title {
+			font-size: 24px;
+			font-weight: 400;
+			margin: 0;
+			position: relative;
+			&:before {
+				content: url('../img/logo-tarif.png');
+				position: absolute;
+				top: -33px;
+				left: 2;
+			}
+		}
+		&__price {
+			font-size: 48px;
+			font-weight: 400;
+			margin: 0;
+			span {
+				font-size: 15px;
+				font-weight: 400;
+				margin: 0;
+				padding-left: 4px;
+				padding-bottom: 0;
+			}
+		}
+	}
+	&-bottom {
+		border-radius: 0 0 8px 8px;
+		.tarif-list {
+			padding: 20px;
+			list-style: none;
+			&__item {
+				font-size: 14px;
+				font-weight: bold;
+				padding-bottom: 16px;
+				padding-left: 30px;
+				position: relative;
+				&:last-child {
+					padding-bottom: 0;
+				}
+			}
+		}
+	}
+	&-item_basic {
+		.tarif-top, .tarif-bottom {
+			background: rgba(16, 10, 48, 0.03);
+		}
+		.tarif-list__item:before {
+			content: url('../img/icon-basic.png');
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	&-item_basique {
+		.tarif-top, .tarif-bottom {
+			background: rgba(25, 199, 135, 0.05);
+		}
+		.tarif-info__title {
+			color: #19C787;
+		}
+		.tarif-list__item:before {
+			content: url('../img/icon-basique.png');
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	&-item_pro {
+		.tarif-top, .tarif-bottom {
+			background: rgba(252, 185, 52, 0.05);
+		}
+		.tarif-info__title {
+			color: #FF9F1C;
+		}
+		.tarif-list__item:before {
+			content: url('../img/icon-pro.png');
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+}
+
+// SECTION REWIEWS
+.reviews {
+	padding-top: 235px;
+}
+.reviews-main {
+	display: flex;
+	justify-content: space-between;
+}
+.reviews-title {
+	padding-bottom: 61px;
+	margin-top: 29px;
+}
+.review-block {
+	width: 596px;
+	padding: 40px;
+	background-color: #E8E5FB;
+	margin-bottom: 40px;
+	border-radius: 8px;
+	&_02 {
+		background-color: #E8FAF3;
+	}
+	&_03 {
+		background-color: #FDEBEE;
+	}
+	&_04 {
+		background-color: #E6F3FF;
+	}
+	&_05 {
+		background-color: #FFF5E1;
+	}
+}
+.review-block-header {
+	display: flex;
+	align-items: center;
+	padding-bottom: 36px;
+}
+.user-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.review-block-header__avatar {
+	padding-right: 16px;
+}
+.user-info-text__name {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+}
+.user-info-text__email {
+	font-size: 15px;
+	font-weight: 400;
+	color: #4C4764;
+}
+.user-info__icon {
+	width: 24px;
+	height: 20px;
+	opacity: .1;
+}
+.review-content__text {
+	line-height: 30px;
+	letter-spacing: 0.18px;
+	font-size: 17px;
+	color: #4C4764;
+	width: 503px;
+}
+.review-content__text-footer {
+	font-weight: bold;
+	padding-top: 20px;
+}
+// FOOTER
+footer {
+	padding: 57px 0 0 0;
+	background-color: #F8F8F9;
+}
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+}
+.column-text {
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+}
+.column__logo {
+	padding-bottom: 24px;
+}
+.column__text {
+	line-height: 30px;
+}
+.social {
+	padding-top: 28px;
+}
+.social__icon {
+	margin-right: 22px;
+	transition: .2s;
+	&:last-child {
+		margin: 0;
+	}
+	&:hover {
+		filter: brightness(4);
+	}
+}
+.column__list {
+	list-style: none;
+}
+.column__item {
+	padding-bottom: 6px;
+	line-height: 24px;
+}
+.column-item_bold {
+	font-weight: 700;
+	padding-bottom: 12px;
+}
+.column__link {
+	color: #4C4764;
+	&:hover {
+		text-decoration: underline;
+	}
+}

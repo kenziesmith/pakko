@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <!-- bold -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <!-- Подключение файла css -->
+    <link rel="stylesheet" href="style/scss/main.css">
+    <!-- Normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Title -->
+    <title>Pakko - practice</title>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <!-- Лого -->
+        <a href="#" class="logo"><img src="style/img/logo.svg" alt="Логотип"></a>
+        <!-- Меню навигации -->
+        <nav>
+            <ul class="nav">
+                <li class="nav__item">
+                    <a href="#tarifs" class="nav__link">Tarifs</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">App iOS</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link nav__link-color">Me connecter</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__btn">S'inscrire</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Секция banner -->
+    <section class="banner">
+        <div class="container">
+            <h1><span class="test">Devis,</span> factures, suivi,<br>
+                plafonds, cotisations</h1>
+            <p>Pakko accompagne les micro-entrepreneurs et leur fait gagner du temps !</p>
+            <div class="btn-group">
+                <a href="#" class="btn-group__btn">Créer mon compte</a>
+                <a href="#" class="btn-group__btn btn-group__border">Voir la vidéo</a>
+            </div>
+            <img src="style/img/banner.png" class="banner__img" alt="Баннер" />
+        </div>
+    </section>
+    <!-- Секция prices -->
+    <section class="prices" id="tarifs">
+        <div class="container">
+            <h1 class="prices_title title">Des tarifs qui s'adaptent<br/>à votre activité !</h1>
+            <!-- Тариф -->
+            <div class="tarif">
+                <!-- Бесплатный тариф -->
+                <div class="tarif-item tarif-item_basic">
+                    <div class="tarif-top">
+                        <div class="tarif-info">
+                            <h3 class="tarif-info__title">Gratuit</h3>
+                            <p class="tarif-info__price">0€<span>/mois</span></p>
+                        </div>
+                    </div>
+                    <div class="tarif-bottom">
+                        <ul class="tarif-list">
+                            <li class="tarif-list__item">Gratuit</li>
+                            <li class="tarif-list__item">Jusqu'à 4 clients</li>
+                            <li class="tarif-list__item">Chiffre d'affaires jusqu'à 5 000€</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Базовый тариф -->
+                <div class="tarif-item tarif-item_basique">
+                    <div class="tarif-top">
+                        <div class="tarif-info">
+                            <h3 class="tarif-info__title">Basique</h3>
+                            <p class="tarif-info__price">5€<span>/mois</span></p>
+                        </div>
+                    </div>
+                    <div class="tarif-bottom">
+                        <ul class="tarif-list">
+                            <li class="tarif-list__item">30 jours d'essai gratuits</li>
+                            <li class="tarif-list__item">Clients illimités</li>
+                            <li class="tarif-list__item">Chiffre d'affaires jusqu'à 30 000€</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Дорогой тариф -->
+                <div class="tarif-item tarif-item_pro">
+                    <div class="tarif-top">
+                        <div class="tarif-info">
+                            <h3 class="tarif-info__title">Pro</h3>
+                            <p class="tarif-info__price">12€<span>/mois</span></p>
+                        </div>
+                    </div>
+                    <div class="tarif-bottom">
+                        <ul class="tarif-list">
+                            <li class="tarif-list__item">Gratuit</li>
+                            <li class="tarif-list__item">Clients illimités</li>
+                            <li class="tarif-list__item">Chiffre d'affaires illimité</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Секция reviews -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="reviews-main">
+                <!-- Левая часть отзывов -->
+                <div class="reviews-left">
+                    <h1 class="reviews-title title">Ils en parlent<br/>mieux que nous</h1>
+                    <!-- Отзывы -->
+                    <div class="review-block">
+                        <div class="review-block-header">
+                            <img class="review-block-header__avatar" src="style/img/avatar.png" alt="Avatar">
+                            <div class="user-info">
+                                <div class="user-info-text">
+                                    <p class="user-info-text__name">Antony Legrand</p>
+                                    <p class="user-info-text__email">@Wisibility</p>
+                                </div>
+                                <img class="user-info__icon" src="style/img/icon.png" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-content__text">
+                                Merci pour toutes vos réponses concernant un bon service de facturation / suivi de CA pour les Free… Je crois qu'avec @Pakko_app j'ai trouvé ce que je cherche. Simple et efficace.
+                            </p>
+                            <p class="review-content__text-footer">
+                                Voir le post
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review-block review-block_02">
+                        <div class="review-block-header">
+                            <img class="review-block-header__avatar" src="style/img/avatar-02.png" alt="Avatar">
+                            <div class="user-info">
+                                <div class="user-info-text">
+                                    <p class="user-info-text__name">Retour utilisateur</p>
+                                    <p class="user-info-text__email">Formulaire de feedback</p>
+                                </div>
+                                <img class="user-info__icon" src="style/img/icon-message.png" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-content__text">
+                                Un onboarding clair et vraiment bien pensé. +10 pour les liens vers le site de l’URSSAF lors de l’inscription.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Правая часть отзывов -->
+                <div class="reviews-right">
+                    <div class="review-block review-block_03">
+                        <div class="review-block-header">
+                            <img class="review-block-header__avatar" src="style/img/avatar-03.png" alt="Avatar">
+                            <div class="user-info">
+                                <div class="user-info-text">
+                                    <p class="user-info-text__name">Retour utilisateur</p>
+                                    <p class="user-info-text__email">Formulaire de feedback</p>
+                                </div>
+                                <img class="user-info__icon" src="style/img/icon-message.png" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-content__text">
+                                C’est exactement ce que je cherchais.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review-block review-block_04">
+                        <div class="review-block-header">
+                            <img class="review-block-header__avatar" src="style/img/avatar-04.png" alt="Avatar">
+                            <div class="user-info">
+                                <div class="user-info-text">
+                                    <p class="user-info-text__name">Matthieu Teyssandier</p>
+                                    <p class="user-info-text__email">@m_teyssandier</p>
+                                </div>
+                                <img class="user-info__icon" src="style/img/icon.png" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-content__text">
+                                @Pakko_app Best service de CA !
+                            </p>
+                            <p class="review-content__text-footer">
+                                Voir le post
+                            </p>
+                        </div>
+                    </div>
+                    <div class="review-block review-block_05">
+                        <div class="review-block-header">
+                            <img class="review-block-header__avatar" src="style/img/avatar-05.png" alt="Avatar">
+                            <div class="user-info">
+                                <div class="user-info-text">
+                                    <p class="user-info-text__name">Retour utilisateur</p>
+                                    <p class="user-info-text__email">Formulaire de feedback</p>
+                                </div>
+                                <img class="user-info__icon" src="style/img/icon-message.png" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p class="review-content__text">
+                                Le service a l’air super ça faisait longtemps que je cherchais un dashboard aussi clean que le votre ! Ça donne envie de l'utiliser !
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="column">
+                    <img class="column__logo" src="style/img/logo-footer.png" alt="Logo">
+                    <p class="column__text column-text">Gagnez du temps,</p>
+                    <p class="column__text column-text">faites ce que vous aimez !</p>
+                    <div class="social">
+                        <a class="social__icon" href="#"><img src="style/img/footer-icon-01.png" alt="Иконка"></a>
+                        <a class="social__icon" href="#"><img src="style/img/footer-icon-02.png" alt="Иконка"></a>
+                        <a class="social__icon" href="#"><img src="style/img/footer-icon-03.png" alt="Иконка"></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <ul class="column__list">
+                        <li class="column__item column-text column-item_bold">Fonctionnalités</li>
+                        <a class="column__link" href="#"><li class="column__item column-text">Suivi et analyse de l'activité</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Devis & facturation</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Gestion des projets et clients</li></a>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="column__list">
+                        <li class="column__item column-text column-item_bold">À propos</li>
+                        <a class="column__link" href="#"><li class="column__item column-text">Tarifs</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Centre d'aide</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">CGV</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Politique de confidentialité</li></a>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul class="column__list">
+                        <li class="column__item column-text column-item_bold">Ressources</li>
+                        <a class="column__link" href="#"><li class="column__item column-text">Deals</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Outilsclass="column__link" </li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Blog</li></a>
+                        <a class="column__link" href="#"><li class="column__item column-text">Simulateur TJM</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
